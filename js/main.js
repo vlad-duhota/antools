@@ -1,3 +1,6 @@
+// wow init
+new WOW().init();
+
 // preloader
 $('body').addClass('no-scroll');
 

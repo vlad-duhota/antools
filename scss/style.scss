@@ -253,7 +253,6 @@ input {
     padding: 8px 13px;
     background: #283036;
     border-radius: 15px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     input{
@@ -265,6 +264,9 @@ input {
         background: transparent;
         padding: 12px;
         flex: 1 1 100%;
+        @media(max-width:$md4){
+        padding-right: 0;
+        }
     }
     &__btn{
         background: $primary;
@@ -273,6 +275,9 @@ input {
         padding: 12px 35px;
         border-radius: 8px;
         transition: background .3s, color .3s;
+        @media(max-width:$md4){
+            padding: 12px;
+        }
         &:hover{
             background: #fff;
             color: #283036;
@@ -571,6 +576,61 @@ input {
     }
 }
 
+.hero{
+    height: 100vh;
+    background: url(../img/hero.svg) right bottom / 45% no-repeat;
+    @media(max-width:$md3){
+    background: none;
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    &__title{
+        color: #fff;
+        font-size: 50px;
+        font-weight: 500;
+        max-width: 600px;
+        margin-bottom: 30px;
+        @media(max-width:$md2){
+            font-size: 40px;
+        }
+        @media(max-width:$md3){
+            font-size: 30px;
+        }
+        @media(max-width:$md4){
+            font-size: 24px;
+        }
+    }
+    &__subtitle{
+        font-size: 18px;
+        margin-bottom: 60px;
+        max-width: 487px;
+    }
+    &-socials{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        &__link{
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            transition: background .3s, transform .3s;
+            &:hover{
+                background: rgba(40, 48, 54, 0.6);
+                transform: translateY(-15px);
+            }
+        }
+    }
+}
+
 // slider
 .team {
     padding: 100px 0;
@@ -729,7 +789,7 @@ input {
             left: -125px;
             @include size(320px, 103px);
             background: url(../img/quote.svg) center / contain no-repeat;
-            @media (max-width: $md3) {
+            @media (max-width: $md1) {
                 display: none;
             }
         }
@@ -836,7 +896,12 @@ input {
 
 // companies
 .companies{
+    padding-top: 200px;
+    @media(max-width:$md2){
+        padding-top: 65px;
+    }
     &__title{
+        padding: 0 15px;
         margin-bottom: 50px;
         position: relative;
         z-index: 3;
@@ -899,8 +964,12 @@ input {
         margin: 0 auto;
     }
     &__item{
+        z-index: 3;
         @media(max-width:$md3){
             width: 46%;
+          }
+          @media(max-width:362px){
+            width: 66%;
           }
     }
     &__img{
@@ -953,6 +1022,7 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    justify-items: center;
     @media(max-width:1225px){
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1032,17 +1102,20 @@ input {
     width: 184px;
     color: #ff6e30;
     font-size: 20px;
-    margin-bottom: 200px;
     background: none;
     border: 1px solid rgb(73, 70, 70);
     border-radius: 8px;
     transition: background .3s;
+    @media(max-width:$md2){
+        margin-top: 30px;
+    }
     &:hover {
           background-color: #ff6e30;
           color: $bg;
       }
   }
 }
+
 
 .newcommer {
     padding-top: 200px;
@@ -1079,8 +1152,7 @@ input {
     }
   }
   .subtitle {
-    width: 427px;
-    height: 90px;
+    max-width: 427px;
     font-size: 18px;
   }
   .newcom-btn {
@@ -1192,6 +1264,9 @@ input {
     }
     .container{
         max-width: 100%;
+    }
+    .form{
+        margin: 0 auto;
     }
     &__title{
         color: #fff;

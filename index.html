@@ -14,11 +14,15 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header wow animate__animated animate__fadeInDown" data-wow-delay="5s">
             <div class="container">
                 <a class="logo">
                     <img src="img/logo.svg" alt="">
@@ -62,12 +66,40 @@
             </div>
         </header>
         <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero__title wow animate__animated animate__fadeInLeft" data-wow-delay="5.3s">Awesome tools for
+                        Designer & Developer<span>.</span></h1>
+                        <p class="hero__subtitle wow animate__animated animate__fadeInLeft" data-wow-delay="5.6s">Antool is a web collection of information on paid or free Design and Development tools</p>
+                        <form action="#" class="form wow animate__animated animate__fadeInLeft" data-wow-delay="5.9s">
+                            <input type="search" class="form__input" placeholder="find more than 430+ tools...">
+                            <input type="submit" class="form__btn" value="Search">
+                        </form>
+                        <ul class="hero-socials wow animate__animated animate__fadeInLeft" data-wow-delay="6.2s">
+                            <li class="hero-socials__item">
+                                <a href="#" class="hero-socials__link">
+                                    <img src="img/facebook.svg" class="hero-socials__img">
+                                </a>
+                            </li>
+                            <li class="hero-socials__item">
+                                <a href="#" class="hero-socials__link">
+                                    <img src="img/insta.svg" class="hero-socials__img">
+                                </a>
+                            </li>
+                            <li class="hero-socials__item">
+                                <a href="#" class="hero-socials__link">
+                                    <img src="img/twitter.svg" class="hero-socials__img">
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </section>
             <section class="pop-tools">
                 <div class="container">
-                   <h2>Most popular tools</h2> 
-                   <p class="subtitle">Tools for the best Designers and Developers<br>most popularly used in the world</p>
+                   <h2 class="wow animate__animated animate__fadeInDown">Most popular tools</h2> 
+                   <p class="subtitle animate__animated animate__fadeInDown">Tools for the best Designers and Developers<br>most popularly used in the world</p>
                    <ul class="prog-list">
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft">
                            <div class="progs">
                                <img class="pop-img" src="img/figma.svg" alt="">
                                <p>FIGMA<br><span>Free</span></p>
@@ -85,7 +117,7 @@
                                <button class="visit">Visit</button>
                            </div>
                        </li>
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft" data-wow-delay=".3s">
                             <div class="progs">
                                <img class="pop-img" src="img/sketch.svg" alt="">
                                <p>Sketch<br><span>Trial & Paid</span></p>
@@ -103,7 +135,7 @@
                                <button class="visit">Visit</button>
                            </div>
                        </li>
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft" data-wow-delay=".6s">
                             <div class="progs">
                                <img class="pop-img" src="img/vs_code.svg" alt="">
                                <p>Visual Studio Code<br><span>Free</span></p>
@@ -121,7 +153,7 @@
                                <button class="visit">Visit</button>
                            </div>
                        </li>
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft">
                             <div class="progs">
                                <img class="pop-img" src="img/notion.svg" alt="">
                                <p>Notion<br><span>Free & Paid</span></p>
@@ -140,7 +172,7 @@
                                <button class="visit">Visit</button>
                            </div>
                        </li>
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft"  data-wow-delay=".3s">
                            <div class="progs">
                                <img class="pop-img" src="img/slack.svg" alt="">
                                <p>Slack<br><span>Free & Paid</span></p>
@@ -158,7 +190,7 @@
                                <button class="visit">Visit</button>
                            </div>
                        </li>
-                       <li class="prog-item">
+                       <li class="prog-item wow animate__animated animate__fadeInLeft" data-wow-delay=".6s">
                            <div class="progs">
                                <img class="pop-img" src="img/invision.svg" alt="">
                                <p>Invision<br><span>Free & Paid</span></p>
@@ -177,31 +209,31 @@
                            </div class="btns">
                        </li>
                    </ul>
-                   <button class="pop-btn">Load more</button>
+                   <button class="pop-btn wow animate__animated animate__fadeInUp">Load more</button>
                 </div>
             </section>
             <section class="companies">
                 <div class="container">
-                    <h2 class="companies__title">
+                    <h2 class="companies__title wow animate__animated animate__fadeInDown">
                         Trusted more than 150+ brand
                     </h2>
                     <ul class="companies__list">
-                        <li class="companies__item">
+                        <li class="companies__item wow animate__animated animate__fadeInDown">
                             <a href="#" class="companies__link">
                                 <img src="img/company_1.svg" class="companies__img">
                             </a>
                         </li>
-                        <li class="companies__item">
+                        <li class="companies__item wow animate__animated animate__fadeInDown" data-wow-delay=".2s">
                             <a href="#" class="companies__link">
                                 <img src="img/company_2.svg" class="companies__img">
                             </a>
                         </li>
-                        <li class="companies__item">
+                        <li class="companies__item wow animate__animated animate__fadeInDown" data-wow-delay=".4s">
                             <a href="#" class="companies__link">
                                 <img src="img/company_3.svg" class="companies__img">
                             </a>
                         </li>
-                        <li class="companies__item">
+                        <li class="companies__item wow animate__animated animate__fadeInDown" data-wow-delay=".6s">
                             <a href="#" class="companies__link">
                                 <img src="img/company_4.svg" class="companies__img">
                             </a>
@@ -211,12 +243,12 @@
             </section>
             <section class="newcommer">
                 <div class="container">
-                 <div class="newcommer__text">
+                 <div class="newcommer__text wow animate__animated animate__fadeInLeft">
                         <h2>Newcommer Tools</h2>
                         <p class="subtitle">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
                         <button class="newcom-btn">Explore more</button>
                  </div>
-                    <ul class="prog-list">
+                    <ul class="prog-list wow animate__animated animate__fadeInRight">
                         <li class="prog-item">
                             <div class="progs">
                                 <div class="newcommer-img">
@@ -365,9 +397,9 @@
             </section>
             <section class="contributor">
                 <div class="container">
-                    <h2 class="contributor__title">Become a contributor?</h2>
-                    <p class="contributor__subtitle">Join us and get tips & tricks to become a great Designer and Developer</p>
-                    <form action="#" class="form">
+                    <h2 class="contributor__title wow animate__animated animate__fadeInDown">Become a contributor?</h2>
+                    <p class="contributor__subtitle wow animate__animated animate__fadeInDown" data-wow-delay=".3s">Join us and get tips & tricks to become a great Designer and Developer</p>
+                    <form action="#" class="form wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                         <input type="email" class="form__input" placeholder="Enter your email...">
                         <input type="submit" class="form__btn" value="Join Us">
                     </form>
@@ -376,7 +408,7 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__col footer__info">
+                <div class="footer__col footer__info wow animate__animated animate__fadeInLeft">
                     <a class="logo">
                         <img src="img/logo.svg" alt="">
                         antools.
@@ -384,7 +416,7 @@
                     <p class="footer__copy">Copyright 2021. Antools</p>
                     <p class="footer__info-text">Antool is a web collection of information on paid or free Design and Development tools</p>
                 </div>
-                <div class="footer__col footer__contact">
+                <div class="footer__col footer__contact wow animate__animated animate__fadeInLeft" data-wow-delay=".3s">
                     <h3 class="footer__titles">Contact Us</h3>
                     <ul class="footer__list">
                         <li class="footer__item">
@@ -398,7 +430,7 @@
                         </li>
                     </ul>
                 </div> 
-                <div class="footer__col footer__categories">
+                <div class="footer__col footer__categories wow animate__animated animate__fadeInLeft" data-wow-delay=".6s">
                     <h3 class="footer__titles">Categories</h3>
                     <ul class="footer__list">
                         <li class="footer__item">
@@ -409,7 +441,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__col footer__company-info">
+                <div class="footer__col footer__company-info wow animate__animated animate__fadeInLeft" data-wow-delay=".9s">
                     <h3 class="footer__titles">Company Info</h3>
                     <ul class="footer__list">
                         <li class="footer__item">
@@ -434,9 +466,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
+        <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
 </body>
 
